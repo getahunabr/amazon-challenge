@@ -16,7 +16,7 @@ import ProductDetail from "./Pages/ProductDetail/ProductDetail";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import ProtectedRoute from "./ProtectedRoute/ProtectedRoute";
-import Footer from "./Footer";
+
 const stripePromise = loadStripe(
   "pk_test_51OiYY2DpGroln9ynzXCdxvT95h1i9gMuUoJtZ7RdSc5foA2Fi0MiDaXNyZALYcRg99zm3KZYQLvCcmqe2ynbliW500Jxxa1BCK"
 );
@@ -54,7 +54,6 @@ const Routing = () => {
         <Route path="/Cart" element={<Cart />} />
         <Route path="/Category/:categoryName" element={<Results />} />
         <Route path="/Products/:ProductId" element={<ProductDetail />} />
-        <Route path="/footer" element={<Footer />} />
       </Routes>
     </Router>
   );

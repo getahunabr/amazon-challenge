@@ -43,35 +43,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 7px;
   overflow: hidden;
   width: 100%;
   flex: 1;
 }
 .search select,
 .search input {
-  padding: 10px;
+  padding: 9px;
   font-weight: bold;
   outline: 1px, solid, white;
 }
 .search select {
   border: none;
+  background-color: #d4d4d4;
 }
 .search input {
   border: 1px solid white;
   width: 100%;
-  margin-right: -2px;
+  margin-right: -1px;
 }
 .search svg {
-  padding: 7px;
+  background-color: #f3a847;
+  max-width: 250px;
+  border: 1px solid #f3a847;
+  cursor: pointer;
+
+  /* padding: 7px;
   background: #febd69;
-  color: #1a1a1a;
+  color: #1a1a1a; */
 }
 .search svg:hover {
-  background: #d49644;
+  background: #d69035;
 }
 .search:focus-within {
-  border: 2px, solid, rgb(235, 161, 173);
+  border: 2px, solid, rgb(248, 163, 4);
 }
 .order_container {
   display: flex;
