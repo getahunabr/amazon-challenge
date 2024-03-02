@@ -50,7 +50,7 @@
 }
 .search select,
 .search input {
-  padding: 9px;
+  padding: 9.6px;
   font-weight: bold;
   outline: 1px, solid, white;
 }
@@ -65,7 +65,7 @@
 }
 .search svg {
   background-color: #f3a847;
-  max-width: 250px;
+  max-width: 200px;
   border: 1px solid #f3a847;
   cursor: pointer;
 
