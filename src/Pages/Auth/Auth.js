@@ -12,7 +12,7 @@ import { DataContext } from "../../DataProvider/DataProvider";
 const Auth = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  console.log(email.password);
+  console.log(email, password);
   const [error, setError] = useState();
 
   const [loading, setLoading] = useState({
@@ -117,7 +117,11 @@ const Auth = () => {
             onClick={authHandler}
             className={classes.login_signInButton}
           >
-            {loading.signIn ? <clipLoader color="#000" size={15} /> : "Sign In"}
+            {loading.signIn ? (
+              <clipLoaders color="#000" size={15} />
+            ) : (
+              "Sign In"
+            )}
           </button>
         </form>
         {/* agreements */}
