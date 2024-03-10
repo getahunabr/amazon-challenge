@@ -63,6 +63,10 @@
   border: none;
   background-color: var(--primary-color);
   text-decoration: none;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
 }
 .subtotal a:hover {
   background-color: var(--primary-shade);

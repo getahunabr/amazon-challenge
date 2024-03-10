@@ -14,7 +14,7 @@ const Cart = () => {
   const total = basket.reduce((amount, item) => {
     return item.price * item.amount + amount;
   }, 0);
-
+  console.log(basket);
   const increment = (item) => {
     dispatch({
       type: Type.ADD_TO_BASKET,
@@ -23,7 +23,7 @@ const Cart = () => {
   };
   const decrement = (id) => {
     dispatch({
-      type: Type.REMOVE_FROM_BASKET,
+      type: Type?.REMOVE_FROM_BASKET,
       id,
     });
   };
